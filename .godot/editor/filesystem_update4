@@ -1,0 +1,13 @@
+res://scenes/main.tscn
+res://scenes/player.tscn
+res://scenes/checkpoint.tscn
+res://src/Checkpoint.cs
+res://src/Player.cs
+res://scenes/hud.tscn
+res://scenes/heart_pickup.tscn
+res://scenes/heart_icon.tscn
+res://src/HeartPickup.cs
+res://src/cactus.tscn
+res://scenes/cactus.tscn
+res://scenes/coin.tscn
+res://src/Coin.cs

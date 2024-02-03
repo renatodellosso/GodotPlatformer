@@ -1,0 +1,14 @@
+AnimationPlayer
+Sprite2D
+CollisionShape2D
+Area2D
+Label
+TextureRect
+ColorRect
+StaticBody2D
+HBoxContainer
+Control
+Node
+Camera2D
+CharacterBody2D
+TileMap

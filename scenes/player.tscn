@@ -1,0 +1,86 @@
+[gd_scene load_steps=9 format=3 uid="uid://obevxod68522"]
+
+[ext_resource type="Script" path="res://src/Player.cs" id="1_6pxs0"]
+[ext_resource type="Texture2D" uid="uid://djr1xajaegqnn" path="res://platformerassets/Tilemap/tilemap-characters_packed.png" id="1_srwcq"]
+[ext_resource type="PackedScene" uid="uid://caae7v8vmwmjh" path="res://scenes/heart_icon.tscn" id="2_im30t"]
+[ext_resource type="PackedScene" uid="uid://d131vqqymj4kf" path="res://scenes/hud.tscn" id="4_kclay"]
+
+[sub_resource type="Animation" id="Animation_we0n7"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:region_rect")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Rect2(24, 0, 24, 24)]
+}
+
+[sub_resource type="Animation" id="Animation_hxhwe"]
+resource_name = "walk"
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:region_rect")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [Rect2(0, 0, 24, 24), Rect2(24, 0, 24, 24)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_ineth"]
+_data = {
+"RESET": SubResource("Animation_we0n7"),
+"walk": SubResource("Animation_hxhwe")
+}
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wnpt3"]
+size = Vector2(20, 22)
+
+[node name="Player" type="CharacterBody2D"]
+script = ExtResource("1_6pxs0")
+HeartIcon = ExtResource("2_im30t")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_srwcq")
+region_enabled = true
+region_rect = Rect2(24, 0, 24, 24)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_ineth")
+}
+autoplay = "walk"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -1)
+shape = SubResource("RectangleShape2D_wnpt3")
+
+[node name="Camera" type="Camera2D" parent="."]
+position = Vector2(0, 24)
+zoom = Vector2(2, 2)
+
+[node name="ColorRect" type="ColorRect" parent="Camera"]
+z_index = -1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -500.0
+offset_top = -300.0
+offset_right = 500.0
+offset_bottom = 300.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.372549, 0.721569, 0.85098, 1)
+
+[node name="Hud" parent="." instance=ExtResource("4_kclay")]
+offset_top = -45.0
+offset_bottom = -45.0

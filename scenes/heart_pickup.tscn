@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://dl86wujtejij"]
+
+[ext_resource type="Script" path="res://src/HeartPickup.cs" id="1_jbraf"]
+[ext_resource type="Texture2D" uid="uid://dc5ha0pdnohuv" path="res://platformerassets/Tilemap/tilemap_packed.png" id="1_y7pxm"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6i5st"]
+
+[node name="HeartPickup" type="Area2D"]
+script = ExtResource("1_jbraf")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_6i5st")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_y7pxm")
+region_enabled = true
+region_rect = Rect2(74, 38, 14, 14)
+
+[connection signal="body_entered" from="." to="." method="OnBodyEntered"]

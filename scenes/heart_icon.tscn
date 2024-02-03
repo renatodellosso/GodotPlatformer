@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://caae7v8vmwmjh"]
+
+[ext_resource type="Texture2D" uid="uid://dc5ha0pdnohuv" path="res://platformerassets/Tilemap/tilemap_packed.png" id="1_ks2r5"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tigak"]
+atlas = ExtResource("1_ks2r5")
+region = Rect2(74, 38, 14, 14)
+
+[node name="Heart Icon" type="TextureRect"]
+texture = SubResource("AtlasTexture_tigak")
+stretch_mode = 3

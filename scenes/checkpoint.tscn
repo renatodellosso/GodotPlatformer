@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://dxar43msd16hy"]
+
+[ext_resource type="Script" path="res://src/Checkpoint.cs" id="1_fdril"]
+[ext_resource type="Texture2D" uid="uid://dc5ha0pdnohuv" path="res://platformerassets/Tilemap/tilemap_packed.png" id="2_xiq6e"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_j1b1p"]
+
+[node name="Checkpoint" type="Area2D"]
+script = ExtResource("1_fdril")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_j1b1p")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_xiq6e")
+region_enabled = true
+region_rect = Rect2(216, 90, 18, 18)
+
+[connection signal="body_entered" from="." to="." method="OnBodyEntered"]

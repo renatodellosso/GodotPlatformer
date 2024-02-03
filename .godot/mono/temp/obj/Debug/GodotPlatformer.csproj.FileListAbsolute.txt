@@ -1,0 +1,17 @@
+D:\Coding Projects\GodotPlatformer\.godot\mono\temp\bin\Debug\GodotPlatformer.deps.json
+D:\Coding Projects\GodotPlatformer\.godot\mono\temp\bin\Debug\GodotPlatformer.runtimeconfig.json
+D:\Coding Projects\GodotPlatformer\.godot\mono\temp\bin\Debug\GodotPlatformer.dll
+D:\Coding Projects\GodotPlatformer\.godot\mono\temp\bin\Debug\GodotPlatformer.pdb
+D:\Coding Projects\GodotPlatformer\.godot\mono\temp\bin\Debug\GodotSharp.dll
+D:\Coding Projects\GodotPlatformer\.godot\mono\temp\bin\Debug\GodotSharpEditor.dll
+D:\Coding Projects\GodotPlatformer\.godot\mono\temp\obj\Debug\GodotPlatformer.csproj.AssemblyReference.cache
+D:\Coding Projects\GodotPlatformer\.godot\mono\temp\obj\Debug\GodotPlatformer.GeneratedMSBuildEditorConfig.editorconfig
+D:\Coding Projects\GodotPlatformer\.godot\mono\temp\obj\Debug\GodotPlatformer.AssemblyInfoInputs.cache
+D:\Coding Projects\GodotPlatformer\.godot\mono\temp\obj\Debug\GodotPlatformer.AssemblyInfo.cs
+D:\Coding Projects\GodotPlatformer\.godot\mono\temp\obj\Debug\GodotPlatformer.csproj.CoreCompileInputs.cache
+D:\Coding Projects\GodotPlatformer\.godot\mono\temp\obj\Debug\GodotPlatformer.csproj.CopyComplete
+D:\Coding Projects\GodotPlatformer\.godot\mono\temp\obj\Debug\GodotPlatformer.dll
+D:\Coding Projects\GodotPlatformer\.godot\mono\temp\obj\Debug\refint\GodotPlatformer.dll
+D:\Coding Projects\GodotPlatformer\.godot\mono\temp\obj\Debug\GodotPlatformer.pdb
+D:\Coding Projects\GodotPlatformer\.godot\mono\temp\obj\Debug\GodotPlatformer.genruntimeconfig.cache
+D:\Coding Projects\GodotPlatformer\.godot\mono\temp\obj\Debug\ref\GodotPlatformer.dll
